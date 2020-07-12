@@ -91,6 +91,14 @@
     box-shadow: 0 0;
     font-family: 'Ubuntu Mono', monospace;
     color: #b3dd70;
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  * {
+    overflow-y:scroll;
+  }
+
+  .phone-hidden {
+    display:none;
   }
 }
