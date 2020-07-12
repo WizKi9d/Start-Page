@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>My Links</title>
+  </head>
+  <body class="background">
+    <div class="container">
+      <div id="time" class="text-center time"></div>
+      <div class="drop">
+        <div class="box">
+          <div class="spaced">
+            <div class="row">
+              <div class="squiggle">&#8275;</div>
+            </div>
+            <div class="row">
+                <div style="color: #ac53df;" class="h3 arrow">&rsaquo;</div>
+                <div class="ls">ls</div>
+            </div>
+            <div class="row links">
+                <div class="item-list"><a href="">github</a></div>
+                <div class="none-link item-list">entertainment</div>
+                <div class="item-list"><a href="">google</a></div>
+                <div class="none-link item-list">work</div>
+                <div class="item-list"><a href="">stackoverflow</a></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="row">
+              <div class="squiggle">&#8275;</div>
+            </div>
+            <div class="row">
+                <div style="color: #ac53df;" class="h3 arrow">&rsaquo;</div>
+                <div class="ls">ls entertainment</div>
+            </div>
+            <div class="row links">
+                <div class="item-list"><a href="">youtube</a></div>
+                <div class="item-list"><a href="">netflix</a></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="row">
+              <div class="squiggle">&#8275;</div>
+            </div>
+            <div class="row">
+                <div style="color: #ac53df;" class="h3 arrow">&rsaquo;</div>
+                <div class="ls">ls .work</div>
+            </div>
+            <div class="row links">
+                <div class="none-link item-list">dev</div>
+                <div class="item-list"><a href="">email</a></div>
+                <div class="item-list"><a href="">calender</a></div>
+                <div class="item-list"><a href="">workleave</a></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="row">
+              <div class="squiggle">&#8275;</div>
+            </div>
+            <div class="row">
+                <div style="color: #ac53df;" class="h3 arrow">&rsaquo;</div>
+                <div class="ls">ls dev</div>
+            </div>
+            <div class="row links">
+                <div class="item-list"><a href="">portal</a></div>
+                <div class="item-list"><a href="">autohub</a></div>
+                <div class="item-list"><a href="">azure</a></div>
+                <div class="item-list"><a href="">bitbucket</a></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="row">
+              <div class="squiggle">&#8275;</div>
+            </div>
+            <div class="row">
+                <div style="color: #ac53df;" class="h3 arrow">&rsaquo;</div>
+                <div class="ls">ls .devextra</div>
+            </div>
+            <div class="row links">
+                <div class="item-list"><a href="">color-hex</a></div>
+                <div class="item-list"><a href="">bootstrap</a></div>
+                <div class="item-list"></div>
+                <div class="item-list"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="text-right">
+          <small class="h6" style="padding-right: 3%"><a class=" work-link font-weight-bold" href="/work">See all work links &#8594;</a></small>
+        </div> -->
+      </div>
+    </div>
+
+<script>
+
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes();
+
+document.getElementById("time").innerHTML = time;
+
+setInterval(function() {
+  var today = new Date();
+  var time = today.getHours() + ":" + today.getMinutes();
+
+  document.getElementById("time").innerHTML = time;
+}, 60 * 1000);
+
+</script>
+
+  </body>
+</html>

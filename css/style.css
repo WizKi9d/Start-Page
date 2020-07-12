@@ -1,0 +1,84 @@
+* {
+  overflow: hidden;
+}
+
+.background {
+  background-color:	#273a47;
+}
+
+.box {
+  border: 5px solid #6187ab;
+  width: 98%;
+  height: 650px;
+  background-color: #273a47;
+  margin-bottom: 1%;
+  margin-right: 3%;
+  box-shadow: 5px 5px 5px #1a1a1a;
+  font-family: 'Ubuntu Mono', monospace;
+  color: #b3dd70;
+}
+
+.drop {
+  margin-top: 5%;
+}
+
+.spaced {
+  padding: 5%;
+}
+
+.spacer {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.ls {
+  margin-top: 0.6%;
+}
+
+.arrow {
+  margin-right: 1%;
+}
+
+.squiggle {
+  margin-left: 0.5%;
+  color: #6187ab;
+}
+
+.center {
+  margin-top: 15%;
+  height: 100%;
+  align-items: center;
+}
+
+.item-list {
+  padding-right: 5%;
+  color: #6187ab;
+  font-weight: bold;
+}
+
+.item-list a{
+  color: #6187ab;
+  text-decoration: none;
+}
+
+.item-list a:hover {
+  transition: 200ms;
+  transition-timing-function: linear;
+  color: #6e9bc5;
+  text-decoration: none;
+}
+
+.none-link {
+  color: #ee515d;
+}
+
+.none-link:hover {
+  color: #ee515d;
+}
+
+.time {
+  font-size: 30px;
+  color: white;
+  margin-top: 5%;
+  font-family: 'Ubuntu Mono', monospace;
+}
