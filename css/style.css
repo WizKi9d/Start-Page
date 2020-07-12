@@ -82,3 +82,15 @@
   margin-top: 5%;
   font-family: 'Ubuntu Mono', monospace;
 }
+
+@media (max-width: 800px) {
+  .box {
+    border: none;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #b3dd70;
+    font-size: 20px;
+  }
+}
