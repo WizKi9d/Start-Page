@@ -99,6 +99,6 @@
   }
 
   .phone-hidden {
-    display:none;
+    visibility: hidden;
   }
 }
