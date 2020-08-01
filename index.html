@@ -10,7 +10,7 @@
   </head>
   <body class="background">
     <div class="container">
-      <div id="time" class="text-center time"></div>
+      <div id="time" class="text-center time">Links</div>
       <div class="drop">
         <div class="box">
           <div class="spaced">
@@ -91,22 +91,42 @@
         </div> -->
       </div>
     </div>
+    <div class="container" style="">
+      <form>
+        <div class="col">
+          <div class="row add">
+            <input type="text" id="linkName" class="form-control" style="background-color: #273a47; border: 2px solid #6187ab; color: #ee515d" placeholder="Link name...">
+          </div>
+          <div class="row add">
+            <input type="text" id="link" class="form-control" style="width: 80%; border-radius: 3px 0 0 3px; background-color: #273a47; border: 2px solid #6187ab; border-right: 0; color: #ee515d" placeholder="Link...">
+            <button type="submit" id="addLink" class="btn btn-primary" style="width:20%; border-radius: 0 3px 3px 0;">Add</button>
+          </div>
+        </div>
+      </form>
+  </div>
 
-<script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
 
-var today = new Date();
-var time = today.getHours() + ":" + today.getMinutes();
+      $(document).ready(function() {
+        $('#addLink').on('click', function(e) {
 
-document.getElementById("time").innerHTML = time;
+          var linkname = document.getElementById('linkName').value;
+          var link = document.getElementById('link').value;
+          $.ajax({
+            url: 'links.php',
+            type: 'POST',
+            data: { linkname: 'hello', link: 'link' },
+            success: function(result) {
+              alert(output);
+            }
+          });
+        });
+      });
 
-setInterval(function() {
-  var today = new Date();
-  var time = today.getHours() + ":" + today.getMinutes();
-
-  document.getElementById("time").innerHTML = time;
-}, 60 * 1000);
-
-</script>
+    </script>
 
   </body>
 </html>
