@@ -2,19 +2,23 @@
   overflow: hidden;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
 .background {
   background-color:	#273a47;
   height: 100%;
 }
 
+.container {
+  margin-left: 35% !important;
+}
+
 .box {
-  border: 5px solid #6187ab;
-  width: 98%;
-  height: 650px;
+  width: 60%;
+  height: 100%;
   background-color: #273a47;
   margin-bottom: 1%;
   margin-right: 3%;
-  box-shadow: 5px 5px 5px #1a1a1a;
   font-family: 'Ubuntu Mono', monospace;
   color: #b3dd70;
 }
@@ -28,8 +32,8 @@
 }
 
 .spacer {
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .ls {
@@ -71,6 +75,10 @@
 
 .none-link {
   color: #ee515d;
+}
+
+.hack-link a {
+  color: #6e459f !important;
 }
 
 .none-link:hover {
@@ -132,5 +140,8 @@
   .div a {
     font-size: 0.5rem;
   }
+
+}
+.hacker-man {
 
 }
